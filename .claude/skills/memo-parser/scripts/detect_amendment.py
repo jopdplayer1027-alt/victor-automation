@@ -13,6 +13,9 @@ import sys
 import re
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
+
 OUTPUT_DIR = Path(__file__).parents[4] / "output"
 
 AMENDMENT_KEYWORDS = re.compile(r"수정사항|수정|변경|변동사항|변동")

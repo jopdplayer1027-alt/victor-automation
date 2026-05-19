@@ -10,6 +10,9 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
+
 try:
     from openpyxl import Workbook, load_workbook
     from openpyxl.styles import Alignment, Border, Font, PatternFill, Side

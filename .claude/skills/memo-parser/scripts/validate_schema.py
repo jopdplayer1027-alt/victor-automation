@@ -7,6 +7,9 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
+
 OUTPUT_DIR = Path(__file__).parents[4] / "output"
 JSON_PATH = OUTPUT_DIR / "01_extracted.json"
 
